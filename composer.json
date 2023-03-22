@@ -16,6 +16,6 @@
     "flipdev/module-foundation-product-options": "main",
     "flipdev/module-foundation-seo": "main",
     "flipdev/module-foundation-xicon": "main"
-  }
+  },
   "minimum-stability": "dev"
 }
