@@ -1,0 +1,12 @@
+// Child theme variables
+@import "../../components/Atoms/variables/foundation-variables";
+
+// Variables
+@import '../../components/Atoms/variables/variables';
+
+// Components
+@import '../../components/styles/critical-checkout';
+@import '../../components/styles/checkout';
+
+// Styles necessary only for Fractal purposes
+@import 'fractal';

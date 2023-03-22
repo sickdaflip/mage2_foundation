@@ -1,0 +1,36 @@
+<?php
+$pageTitle = $this->getChildHtml('page.main.title');
+$categoryDescription = $this->getChildHtml('category.description');
+$categoryCms = $this->getChildHtml('category.cms');
+
+//temporary fix for 2 lines at the bottom of file:
+//magento/module-page-builder/view/frontend/templates/catalog/category/view/description.phtml
+$emptyTemplateNeedle = '<!--default-empty-->';
+$categoryDescription =
+    (strlen($categoryDescription) > 1) && (!strpos($categoryDescription, $emptyTemplateNeedle))
+    ? $categoryDescription
+    : false;
+?>
+<div
+    class="
+        banner
+        banner--category
+        catalog-list__banner
+    "
+>
+    <div class="banner__wrapper">
+
+        <div class="banner__heading-wrapper">
+            <div class="banner__heading">
+                <?= /* @noEscape */ $pageTitle ?>
+            </div>
+        </div>
+    </div>
+    <?php if ($categoryDescription): ?>
+
+            <?= /* @noEscape */ $categoryDescription ?>
+
+    <?php endif; ?>
+</div>
+
+<?= /* @noEscape */ $categoryCms ?>

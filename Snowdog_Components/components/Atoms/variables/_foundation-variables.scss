@@ -1,0 +1,71 @@
+// Semantic color scheme
+$color-primary               : #000c44;
+$color-secondary             : #ff9200;
+
+// Typography
+$font-family-sans-serif      : 'Roboto';
+$font-family-serif           : $font-family-sans-serif;
+$font-family-base            : $font-family-sans-serif;
+$font-family-secondary       : $font-family-serif;
+$font-weight-normal          : 300;
+
+$font-size-super-extra-large : 32px;
+$font-size-extra-large       : 24px;
+$font-size-large             : 18px;
+$font-size-medium            : 16px;
+$font-size-base              : 14px;
+$font-size-small             : 12px;
+$font-size-extra-small       : 10px;
+
+// Layout
+$max-content-width           : 1600px;
+
+// Atoms base
+$maincontent-margin-top--homepage: 40px;
+
+//Organisms teaser
+$teaser__background-color    : $color-primary;
+
+// Templates cms-page
+$cms-page__max-width\@medium: 88%;
+$cms-page__max-width\@large : 88%;
+$cms-page__max-width\@xlarge: 100%;
+
+//Header
+.header {
+    &__logo {
+        fill: $color-primary;
+    }
+}
+
+//Footer
+$footer__switcher-label-background-color: $color-primary;
+$footer__link-font-weight: 300;
+$footer__links-dropdown-list-item-width-first-child\@medium: 100%;
+
+//
+$tab__content-padding              : 0;
+$tab__content-padding\@medium      : 0;
+$tab__content-padding\@large       : 0;
+$tab__content-padding\@extra-large : 0;
+
+//Banner
+$banner__content-padding--category\@large : 5px;
+
+//Price
+$price__font-size              : 10px;
+$price__font-size\@medium      : 10px;
+$price__font-weight            : 200;
+
+//Product_name
+$product-grid-item__name-font-size  : 10px;
+$product-grid-item__name-font-size\@medium  : 13px;
+
+//Product_grid_item
+$product-grid-item__image-height: 100%;
+
+//Ratio_Container
+$ratio-container-height: 100%;
+
+//Mega Menu
+$mega-menu__link-padding: 0 12px;

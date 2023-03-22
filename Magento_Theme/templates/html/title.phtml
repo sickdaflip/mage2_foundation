@@ -1,0 +1,35 @@
+<?php
+/**
+ * @var $block \Magento\Theme\Block\Html\Title
+ */
+?>
+
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$request = $objectManager->get('Magento\Framework\App\Action\Context')->getRequest();
+if ($request->getFullActionName() == 'catalog_category_view') {
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+    $category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');
+    $additional_headline = $category->getData('additional_headline');
+}
+$page_title = isset($additional_headline) ? $additional_headline : $block->getPageHeading();
+?>
+
+
+<?php if (!empty(trim($block->getPageHeading()))): ?>
+    <h1
+        class="
+            heading
+            heading--page
+            <?= $block->escapeHtmlAttr($block->getCssClass()); ?>
+        "
+        data-ui-id="page-title-wrapper"
+        <?= $block->getId() ? 'id="' . $block->escapeHtmlAttr($block->getId()) . '"' : ''; ?>
+        <?= $block->getAddBaseAttributeAria() ? 'aria-labelledby="' . $block->escapeHtmlAttr($block->getAddBaseAttributeAria()) . '"' : ''; ?>
+        <?= /* @noEscape */
+        $block->getAddBaseAttribute() ?>
+    >
+        <?= $block->escapeHtml($page_title); ?>
+    </h1>
+    <?= $block->getChildHtml() ?>
+<?php endif ?>

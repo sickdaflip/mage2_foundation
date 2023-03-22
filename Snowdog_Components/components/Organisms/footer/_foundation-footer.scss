@@ -1,0 +1,33 @@
+.footer {
+    &__handler {
+        justify-content: center;
+    }
+    &__links {
+        background-color: scale-color($footer__background-color, $lightness: -15%);
+        .dropdown-list, .dropdown-list__label {
+            background-color: inherit;
+        }
+    }
+    &__bottom-bar {
+        background-color: scale-color($footer__background-color, $lightness: -30%);
+        .footer__bottom-bar-handler {
+            flex-direction: column;
+            justify-content: center;
+            .footer__bottom-org {
+                a {
+                    color: $footer__link-color;
+                }
+            }
+            .footer__bottom-copyright {
+                p {
+                    color: $footer__link-color;
+                }
+            }
+            .footer__dropdown-switcher {
+                .dropdown-list__label {
+                    background-color: scale-color($footer__background-color, $lightness: -30%);
+                }
+            }
+        }
+    }
+}

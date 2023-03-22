@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--Moved blocks-->
+        <move element="product.info.sku" destination="product.column.right.upper" after="page.main.title" />
+        <move element="product.info.price" destination="product.column.right.upper" after="product.info.sku" />
+        <!-- Removed blocks -->
+        <referenceBlock name="product.info.overview" remove="true" />
+    </body>
+</page>

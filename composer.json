@@ -1,0 +1,11 @@
+{
+  "name": "flipdev/foundation",
+  "description": "Mage2 Dev-Theme",
+  "type": "magento2-theme",
+  "version": "1.0.1",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}

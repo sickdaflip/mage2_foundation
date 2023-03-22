@@ -1,0 +1,16 @@
+// Child theme variables
+@import "../Snowdog_Components/components/Atoms/variables/foundation-variables";
+
+// Variables
+@import '../Snowdog_Components/components/Atoms/variables/variables';
+
+// Components
+@import '../Snowdog_Components/components/styles/critical';
+@import '../Magento_Theme/styles/module-critical';
+
+// Hide non-critical sections, before loading full stylesheet
+.page-main,
+.footer,
+.breadcrumbs {
+    display: none;
+}

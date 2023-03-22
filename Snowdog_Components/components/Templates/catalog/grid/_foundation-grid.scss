@@ -1,0 +1,26 @@
+.catalog-grid {
+
+    .categorie-grid-item {
+        align-self: end;
+
+        .image,
+        img,
+        picture {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @include mq($screen-l) {
+        grid-template-columns: $catalog-grid__template-columns\@large;
+    }
+
+    @include mq($screen-xl) {
+        grid-template-columns: $catalog-grid__template-columns\@xlarge;
+    }
+
+    @include mq($screen-xxl) {
+        grid-template-columns: $catalog-grid__template-columns\@xxlarge;
+    }
+
+}
