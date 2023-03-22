@@ -12,9 +12,9 @@
     "snowdog/module-alpaca-packages": "~1.14.0",
     "snowdog/theme-frontend-alpaca":  "~2.28.2",
     "snowdog/frontools": "~1.12.2",
-    "flipdev/module-foundation-frontools": "~1.0.0",
-    "flipdev/module-foundation-product-options": "~1.0.0",
-    "flipdev/module-foundation-seo": "~1.0.0",
-    "flipdev/module-foundation-xicon": "~1.0.0"
+    "flipdev/module-foundation-frontools": "~1.0.0@dev-main",
+    "flipdev/module-foundation-product-options": "~1.0.0@dev-main",
+    "flipdev/module-foundation-seo": "~1.0.0@dev-main",
+    "flipdev/module-foundation-xicon": "~1.0.0@dev-main"
   }
 }
