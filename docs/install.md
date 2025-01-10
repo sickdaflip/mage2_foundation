@@ -6,9 +6,10 @@ Installation instructions for the current Magento 2 version.
 
     composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition html
 
-add Migration-Tool (optional)
+add Tools & Elasticsearch 8 (optional)
 
     composer require magento/data-migration-tool
+    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
 
 ## install magento
 
@@ -33,6 +34,10 @@ add Migration-Tool (optional)
 change mage enviroment to developer
 
     php bin/magento deploy:mode:set developer
+
+add SampleData (only in Dev-Mode!)
+
+    bin/magento sampledata:deploy
 
 change mage admin url (optional)
 
