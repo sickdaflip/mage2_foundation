@@ -1,7 +1,5 @@
 # Install Mage 2 Dev-Env for this Theme
 
-------------
-
 Installation instructions for the current Magento 2 version.
 
     composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition html
