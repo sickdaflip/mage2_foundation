@@ -37,7 +37,7 @@ change mage enviroment to developer
 
 add SampleData (only in Dev-Mode!)
 
-    bin/magento sampledata:deploy
+    php bin/magento sampledata:deploy
 
 change mage admin url (optional)
 
