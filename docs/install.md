@@ -45,7 +45,7 @@ change mage admin url (optional)
 
 disable modules for build frontend
 
-    php bin/magento module:disable Magento_TwoFactorAuth Magento_Csp
+    php bin/magento module:disable Magento_AdminAdobeImsTwoFactorAuth Magento_TwoFactorAuth
 
 add frontools
 
