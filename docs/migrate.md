@@ -30,6 +30,87 @@
         }
 ```
 
+Setup Stores via app/etc/config.php as SCOPES
+
+```
+'scopes' => [
+        'websites' => [
+            'admin' => [
+                'website_id' => '0',
+                'code' => 'admin',
+                'name' => 'Admin',
+                'sort_order' => '0',
+                'default_group_id' => '0',
+                'is_default' => '0'
+            ],
+            'base' => [
+                'website_id' => '1',
+                'code' => 'base',
+                'name' => 'Base',
+                'sort_order' => '0',
+                'default_group_id' => '1',
+                'is_default' => '1'
+            ]
+        ],
+        'groups' => [
+            [
+                'group_id' => '0',
+                'website_id' => '0',
+                'name' => 'Default',
+                'root_category_id' => '0',
+                'default_store_id' => '0',
+                'code' => 'default'
+            ],
+            [
+                'group_id' => '1',
+                'website_id' => '1',
+                'name' => 'Main Website Group',
+                'root_category_id' => '2',
+                'default_store_id' => '1',
+                'code' => 'main_website_store'
+            ]
+        ],
+        'stores' => [
+            'admin' => [
+                'store_id' => '0',
+                'code' => 'admin',
+                'website_id' => '0',
+                'group_id' => '0',
+                'name' => 'Admin',
+                'sort_order' => '0',
+                'is_active' => '1'
+            ],
+            'default' => [
+                'store_id' => '1',
+                'code' => 'default',
+                'website_id' => '1',
+                'group_id' => '1',
+                'name' => 'Default Store View',
+                'sort_order' => '0',
+                'is_active' => '1'
+            ],
+            'b2b' => [
+                'store_id' => '3',
+                'code' => 'b2b',
+                'website_id' => '3',
+                'group_id' => '3',
+                'name' => 'B2B Store View',
+                'sort_order' => '20',
+                'is_active' => '1'
+            ],
+            'b2c' => [
+                'store_id' => '4',
+                'code' => 'b2c',
+                'website_id' => '3',
+                'group_id' => '3',
+                'name' => 'B2C Store View',
+                'sort_order' => '30',
+                'is_active' => '1'
+            ]
+        ]
+    ]
+```
+
 Unhide all Product Images on Product Page
 
     UPDATE `catalog_product_entity_media_gallery_value` SET `disabled` = '0' WHERE `disabled` = '1';
