@@ -2,7 +2,7 @@
 
 ------------
 
-> vendor/magento/module-store/Model/StoreRepository.php
+> vendor/magento/module-store/Model/StoreRepository.php (Optional)
 
 ```
 // Around line 74
@@ -64,7 +64,7 @@ Setup Stores via app/etc/config.php as SCOPES
             [
                 'group_id' => '1',
                 'website_id' => '1',
-                'name' => 'Main Website Group',
+                'name' => 'Main Website Store',
                 'root_category_id' => '2',
                 'default_store_id' => '1',
                 'code' => 'main_website_store'
@@ -95,7 +95,7 @@ Setup Stores via app/etc/config.php as SCOPES
                 'website_id' => '3',
                 'group_id' => '3',
                 'name' => 'B2B Store View',
-                'sort_order' => '20',
+                'sort_order' => '10',
                 'is_active' => '1'
             ],
             'b2c' => [
@@ -104,7 +104,7 @@ Setup Stores via app/etc/config.php as SCOPES
                 'website_id' => '3',
                 'group_id' => '3',
                 'name' => 'B2C Store View',
-                'sort_order' => '30',
+                'sort_order' => '20',
                 'is_active' => '1'
             ]
         ]
